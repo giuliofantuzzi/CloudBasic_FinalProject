@@ -1,6 +1,4 @@
 #!/bin/bash
-# Start the containers in background
-docker - compose up -d
 # Set default quote-per-user
 docker exec --user www-data nextcloud php occ config:app:set files default_quota --value '2 GB'
 # Enable encryption
@@ -10,4 +8,4 @@ docker exec --user www-data nextcloud /var/www/html/occ encryption:enable
 docker exec --user www-data nextcloud /var/www/html/occ config:system:set trusted_domains 1 --value=nextcloud
 # Create users and generate files
 sh ./create_usr.sh 50
-sh ./data/generate_files.sh
+sh ./generate_files.sh
