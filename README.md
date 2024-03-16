@@ -51,4 +51,4 @@ then, launch the setup file with:
 sh setup.sh
 ```
 
-Once the `setup.sh` run is completed, you can perform tests on Locust simply going to [http://localhost:8080](http://localhost:8080)
+Once the `setup.sh` run is completed, you can perform tests on Locust simply going to [http://localhost:8089](http://localhost:8089)
